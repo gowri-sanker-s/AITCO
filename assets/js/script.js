@@ -70,3 +70,17 @@ $(document).ready(function () {
   // Observe the counting section
   observer.observe(document.querySelector("#start"));
 });
+document
+  .getElementById("dropdown-toggle")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+    var dropdownMenu = document.getElementById("dropdown-menu");
+    dropdownMenu.classList.toggle("active");
+  });
+document
+  .getElementById("language-dropdown-toggle")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default anchor click behavior
+    var dropdownMenu = document.getElementById("language-dropdown-menu");
+    dropdownMenu.classList.toggle("active");
+  });

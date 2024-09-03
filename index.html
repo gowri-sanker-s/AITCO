@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>AITCO</title>
   </head>
   <body>
     <div class="whatsapp-icon">
-      <a href="https://wa.me/+966165165374" target="_blank">
+      <a href="https://wa.me/+966548540418" target="_blank">
         <img src="./assets/images/Whatsapp icon.png" alt="whatsapp" />
       </a>
     </div>
@@ -22,9 +26,16 @@
         >
       </p>
       <div class="socials">
-        <img src="./assets/images/icons/fb.svg" alt="" />
-        <img src="./assets/images/icons/insta.svg" alt="" />
-        <img src="./assets/images/icons/x.svg" alt="" />
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="./assets/images/icons/fb.svg" alt=""
+        /></a>
+
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="./assets/images/icons/insta.svg" alt=""
+        /></a>
+        <a href="https://www.x.com" target="_blank">
+          <img src="./assets/images/icons/x.svg" alt=""
+        /></a>
       </div>
     </div>
     <!-- header start -->
@@ -41,19 +52,53 @@
               <a href="#spotlight">Home</a>
               <a href="#about">About</a>
               <a href="#service">Services</a>
-              <a href="#product">Products</a>
+              <div class="dropdown-here">
+                <a href="#product" id="dropdown-toggle"
+                  >Products
+                  <i class="fa fa-chevron-down" style="font-size: 12px"></i
+                ></a>
+                <div class="dropdown-container" id="dropdown-menu">
+                  <div class="inner-container">
+                    <div class="section">
+                      <a href="./pages/Mechanical.html">Mechanical Tools</a>
+                      <a href="#about">Electrical Tools</a>
+                      <a href="#service">Instrumental Tools</a>
+                      <a href="#service">Pipes & Fittings</a>
+                    </div>
+                    <div class="section">
+                      <a href="#spotlight">Safety Tools</a>
+                      <a href="#about">Premium Tools</a>
+                      <a href="#service">Fasteners</a>
+                      <a href="#service">Consumables</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <a href="#get-in-touch">Contact</a>
-              <button class="enquiry">
-                <img
-                  src="./assets/images/icons/call.svg"
-                  alt="quick enquiry"
-                />Quick Enquiry
-              </button>
-              <button class="language">
-                Language<img
-                  src="./assets/images/icons/chevron.svg"
-                  alt="language"
-                />
+              <a href="tel:tel:+966165165374" target="_blank">
+                <button class="enquiry">
+                  <img
+                    src="./assets/images/icons/call.svg"
+                    alt="quick enquiry"
+                  />
+                  Quick Enquiry
+                </button>
+              </a>
+
+              <button class="language" id="language-dropdown-toggle">
+                Language
+                <i class="fa fa-chevron-down" style="font-size: 12px"></i>
+                <div
+                  class="language-dropdown-container"
+                  id="language-dropdown-menu"
+                >
+                  <div class="inner-container">
+                    <div class="section">
+                      <a href="#spotlight">English</a>
+                      <a href="#about">Arabic</a>
+                    </div>
+                  </div>
+                </div>
               </button>
             </div>
           </div>
@@ -216,16 +261,10 @@
           </div>
           <div class="items">
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product.png" alt="Product Image" />
               </div>
+
               <div class="bottom">
                 <span>Mechanical</span>
                 <img src="./assets/images/icons/rightTop.svg" alt="" />
@@ -233,16 +272,10 @@
             </div>
 
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product2.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product2.png" alt="Product Image" />
               </div>
+
               <div class="bottom">
                 <span>Electrical</span>
                 <img src="./assets/images/icons/rightTop.svg" alt="" />
@@ -250,15 +283,8 @@
             </div>
 
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product3.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product3.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Instrumentation</span>
@@ -267,15 +293,8 @@
             </div>
 
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product4.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product4.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Pipes & Fittings</span>
@@ -284,31 +303,18 @@
             </div>
 
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product5.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product5.png" alt="Product Image" />
               </div>
+
               <div class="bottom">
                 <span>Safety Tools</span>
                 <img src="./assets/images/icons/rightTop.svg" alt="" />
               </div>
             </div>
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product6.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product6.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Premium Tools</span>
@@ -316,15 +322,8 @@
               </div>
             </div>
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product7.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product7.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Fasteners</span>
@@ -332,15 +331,8 @@
               </div>
             </div>
             <div class="card">
-              <div class="images">
-                <div class="img">
-                  <div class="item">
-                    <img
-                      src="./assets/images/product8.png"
-                      alt="Product Image"
-                    />
-                  </div>
-                </div>
+              <div class="img">
+                <img src="./assets/images/product8.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Consumables</span>
@@ -499,15 +491,7 @@
         <div class="container">
           <div class="left">
             <div class="map-container">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14944198.792859051!2d34.42921449439638!3d23.87237802614596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi%20Arabia!5e0!3m2!1sen!2sin!4v1725300464821!5m2!1sen!2sin"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+              <img src="./assets//images/vision.jpg" alt="" />
             </div>
           </div>
           <div class="right">
