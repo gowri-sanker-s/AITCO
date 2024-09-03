@@ -316,7 +316,7 @@ header .menu-box {
 /* ====== About US Styles ======= */
 
 #about {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 #about .top h3 {
   color: #12355b;
@@ -544,7 +544,7 @@ header .menu-box {
   font-size: 34px;
 }
 #service .container .subhead {
-  font-size: 16px;
+  font-size: 20px;
   padding-bottom: 20px;
 }
 #service .container .last {
@@ -591,7 +591,7 @@ header .menu-box {
   width: 50%;
   margin: auto;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
 }
 #why-choose .container .box-container {
   display: grid;
@@ -611,6 +611,9 @@ header .menu-box {
 }
 #why-choose .container .box-container .box h3 {
   font-family: "nexa-bold";
+}
+#why-choose .container .box-container .box p {
+  font-size: 18px;
 }
 #why-choose .container .box-container .box .icon-container {
   height: 50px;
@@ -869,8 +872,43 @@ footer .container .right .section form input::placeholder {
     width: 10px;
     object-fit: contain;
   }
+  #about .top h3 {
+    font-size: 34px;
+  }
+  #about .top p {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 1.6rem;
+  }
+  #about .items .bottom p {
+    font-size: 19px;
+  }
+  #about .items .counter {
+    font-size: 38px;
+  }
+  #about .items .count-container .plus {
+    font-size: 38px;
+  }
+  #about .mission .container ul li .content p {
+    color: #ffff;
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+  #product .top h4 {
+    font-size: 28px;
+  }
+  #product .top p {
+    font-size: 16px;
+  }
   #product .container .items {
     grid-template-columns: 1fr;
+  }
+
+  #service .container .box h3 {
+    font-size: 30px;
+  }
+  #why-choose .container p {
+    font-size: 16px;
   }
   #why-choose .container .box-container {
     grid-template-columns: 1fr;
