@@ -231,6 +231,7 @@ header .menu-box {
   display: grid;
   place-items: center;
   row-gap: 10px;
+  margin-top: 20px;
 }
 .mobile-header .lists button {
   display: flex;
@@ -372,7 +373,7 @@ header .dropdown-container .inner-container .section a {
 }
 
 #about .top p {
-  margin-top: 14px;
+  margin: 15px 0;
   font-size: 20px;
   line-height: 1.6rem;
 }
@@ -386,8 +387,8 @@ header .dropdown-container .inner-container .section a {
 }
 
 #about .items .single {
-  margin: o auto;
-  margin-top: 30px;
+  /* margin: 0 auto; */
+  margin-top: 00px;
   background: #f3f3f3;
   padding: 10px 30px;
   border-radius: 10px;
@@ -402,7 +403,7 @@ header .dropdown-container .inner-container .section a {
 #about .items .single .count-container {
   margin: 0 auto;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-start;
 }
 
@@ -440,16 +441,23 @@ header .dropdown-container .inner-container .section a {
 #about .mission .container {
 }
 
-#about .mission .container ul {
+#about .mission .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
 }
+#about .mission .container .img-container {
+  height: 100%;
+  width: 100%;
+}
 
 #about .mission .container ul li {
-  padding: 40px 60px;
+  padding: 30px 50px;
   background: #12355b;
   border-radius: 10px;
+}
+#about .mission .container ul li:last-child {
+  margin-top: 10px;
 }
 
 #about .mission .container ul li .tittle {
@@ -705,7 +713,7 @@ header .dropdown-container .inner-container .section a {
   margin-bottom: 20px;
 }
 #get-in-touch .container .left .map-container {
-  height: 400px;
+  height: 100%;
   width: 100%;
 }
 #get-in-touch .container .left .map-container .map {
@@ -800,6 +808,18 @@ footer .container .right .section form input::placeholder {
   #product .container .items {
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+@media screen and (max-width: 1080px) {
+  #about .mission .container {
+    grid-template-columns: 1fr;
+  }
+  #about .mission .container .img-container {
+    height: 500px;
+    width: 100%;
+  }
+  /* #about .mission .container .img-container img{
+    object-fit: contain;
+  } */
 }
 @media screen and (max-width: 980px) {
   header .mobile-menu {
@@ -974,6 +994,10 @@ footer .container .right .section form input::placeholder {
   }
   #why-choose .container .box-container .box:last-child {
     grid-column: unset;
+  }
+  #get-in-touch .container .left .map-container {
+    height: 300px;
+
   }
 }
 @media screen and (max-width: 480px) {

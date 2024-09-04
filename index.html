@@ -44,7 +44,9 @@
         <div class="container">
           <div class="left">
             <div class="logo-container">
-              <img src="./assets/images/icons/logo.png" alt="logo" />
+              <a href="./index.html">
+                <img src="./assets/images/icons/logo.png" alt="logo" />
+              </a>
             </div>
           </div>
           <div class="right">
@@ -94,8 +96,8 @@
                 >
                   <div class="inner-container">
                     <div class="section">
-                      <a href="#spotlight">English</a>
-                      <a href="#about">Arabic</a>
+                      <a href="./index.html">English</a>
+                      <a href="./arabicIndex.html">عربي</a>
                     </div>
                   </div>
                 </div>
@@ -114,7 +116,29 @@
             <a href="#spotlight">Home</a>
             <a href="#about">About</a>
             <a href="#service">Services</a>
-            <a href="#product">Products</a>
+            <!-- <a href="#product">Products</a> -->
+            <div class="dropdown-here">
+              <a href="#product" id="mobile-dropdown-toggle"
+                >Products
+                <i class="fa fa-chevron-down" style="font-size: 12px"></i
+              ></a>
+              <div class="dropdown-container" id="mobile-dropdown-menu">
+                <div class="inner-container">
+                  <div class="section">
+                    <a href="./pages/Mechanical.html">Mechanical Tools</a>
+                    <a href="#about">Electrical Tools</a>
+                    <a href="#service">Instrumental Tools</a>
+                    <a href="#service">Pipes & Fittings</a>
+                  </div>
+                  <div class="section">
+                    <a href="#spotlight">Safety Tools</a>
+                    <a href="#about">Premium Tools</a>
+                    <a href="#service">Fasteners</a>
+                    <a href="#service">Consumables</a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <a href="#get-in-touch">Contact</a>
             <div class="buttons">
               <button class="enquiry">
@@ -123,11 +147,20 @@
                   alt="quick enquiry"
                 />Quick Enquiry
               </button>
-              <button class="language">
-                Language<img
-                  src="./assets/images/icons/chevron.svg"
-                  alt="language"
-                />
+              <button class="language" id="mobile-language-dropdown-toggle">
+                Language
+                <i class="fa fa-chevron-down" style="font-size: 12px"></i>
+                <div
+                  class="language-dropdown-container"
+                  id="mobile-language-dropdown-menu"
+                >
+                  <div class="inner-container">
+                    <div class="section">
+                      <a href="./index.html">English</a>
+                      <a href="./arabicIndex.html">عربي</a>
+                    </div>
+                  </div>
+                </div>
               </button>
             </div>
           </div>
@@ -212,6 +245,9 @@
 
         <div class="mission">
           <div class="container">
+            <div class="img-container">
+              <img src="./assets/images/vision.jpg" alt="vision 2030" />
+            </div>
             <ul>
               <li>
                 <div class="tittle">
@@ -262,7 +298,7 @@
           <div class="items">
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product.png" alt="Product Image" />
+                <img src="./assets/images/mechanical.png" alt="Product Image" />
               </div>
 
               <div class="bottom">
@@ -273,7 +309,7 @@
 
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product2.png" alt="Product Image" />
+                <img src="./assets/images/electrical.png" alt="Product Image" />
               </div>
 
               <div class="bottom">
@@ -284,7 +320,7 @@
 
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product3.png" alt="Product Image" />
+                <img src="./assets/images/instuments.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Instrumentation</span>
@@ -294,7 +330,7 @@
 
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product4.png" alt="Product Image" />
+                <img src="./assets/images/pipes.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Pipes & Fittings</span>
@@ -304,7 +340,7 @@
 
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product5.png" alt="Product Image" />
+                <img src="./assets/images/safety.png" alt="Product Image" />
               </div>
 
               <div class="bottom">
@@ -314,7 +350,7 @@
             </div>
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product6.png" alt="Product Image" />
+                <img src="./assets/images/premium.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Premium Tools</span>
@@ -323,7 +359,7 @@
             </div>
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product7.png" alt="Product Image" />
+                <img src="./assets/images/fastners.png" alt="Product Image" />
               </div>
               <div class="bottom">
                 <span>Fasteners</span>
@@ -332,7 +368,10 @@
             </div>
             <div class="card">
               <div class="img">
-                <img src="./assets/images/product8.png" alt="Product Image" />
+                <img
+                  src="./assets/images/consumables.png"
+                  alt="Product Image"
+                />
               </div>
               <div class="bottom">
                 <span>Consumables</span>
@@ -491,7 +530,16 @@
         <div class="container">
           <div class="left">
             <div class="map-container">
-              <img src="./assets//images/vision.jpg" alt="" />
+              <!-- <img src="./assets//images/vision.jpg" alt="" /> -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14944126.196402105!2d34.43852001617353!3d23.873006931887353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi%20Arabia!5e0!3m2!1sen!2sin!4v1725425250645!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 0; border-radius: 15px; overflow: hidden"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
           <div class="right">
@@ -520,14 +568,14 @@
           </div>
           <div class="right">
             <div class="section">
-              <a href="">About us</a>
-              <a href="">Product</a>
-              <a href="">Contact</a>
+              <a href="#about">About us</a>
+              <a href="#product">Product</a>
+              <a href="#get-in-touch">Contact</a>
             </div>
             <div class="section">
-              <a href="">Facebook</a>
-              <a href="">Instagram</a>
-              <a href="">Youtube</a>
+              <a href="https://www.facebook.com" target="_blank">Facebook</a>
+              <a href="https://www.instagram.com" target="_blank">Instagram</a>
+              <a href="https://www.x.com" target="_blank">Youtube</a>
             </div>
             <div class="section">
               <form

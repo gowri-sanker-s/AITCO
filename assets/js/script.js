@@ -81,6 +81,21 @@ document
   .getElementById("language-dropdown-toggle")
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevent default anchor click behavior
+    event.stopPropagation(); // Prevent event from bubbling up
     var dropdownMenu = document.getElementById("language-dropdown-menu");
     dropdownMenu.classList.toggle("active");
   });
+
+document
+  .getElementById("language-dropdown-menu")
+  .addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent the dropdown from closing
+  });
+
+document.addEventListener("click", function () {
+  var dropdownMenu = document.getElementById("language-dropdown-menu");
+
+  if (dropdownMenu.classList.contains("active")) {
+    dropdownMenu.classList.remove("active");
+  }
+});
