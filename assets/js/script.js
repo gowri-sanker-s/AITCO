@@ -70,32 +70,46 @@ $(document).ready(function () {
   // Observe the counting section
   observer.observe(document.querySelector("#start"));
 });
-document
-  .getElementById("dropdown-toggle")
-  .addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor click behavior
-    var dropdownMenu = document.getElementById("dropdown-menu");
-    dropdownMenu.classList.toggle("active");
-  });
-document
-  .getElementById("language-dropdown-toggle")
-  .addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent default anchor click behavior
-    event.stopPropagation(); // Prevent event from bubbling up
-    var dropdownMenu = document.getElementById("language-dropdown-menu");
-    dropdownMenu.classList.toggle("active");
+
+// toggle products and language
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdowns = document.querySelectorAll(".dropdown-here");
+
+  dropdowns.forEach((dropdown) => {
+    const dropdownContainer = dropdown.querySelector(
+      ".dropdown-container, .language-dropdown-container"
+    );
+
+    // Hover for desktop
+    dropdown.addEventListener("mouseenter", () => {
+      dropdownContainer.style.display = "block";
+    });
+
+    dropdown.addEventListener("mouseleave", () => {
+      dropdownContainer.style.display = "none";
+    });
+
+    // Click for mobile
+    dropdown
+      .querySelector("a, .language-button")
+      .addEventListener("click", (e) => {
+        e.preventDefault();
+        // const isDisplayed = dropdownContainer.style.display === "block";
+        // dropdownContainer.style.display = isDisplayed ? "none" : "block";
+        dropdownContainer.classList.toggle("show");
+      });
   });
 
-document
-  .getElementById("language-dropdown-menu")
-  .addEventListener("click", function (event) {
-    event.stopPropagation(); // Prevent the dropdown from closing
+  // Close dropdowns when clicking outside
+  document.addEventListener("click", (e) => {
+    dropdowns.forEach((dropdown) => {
+      const dropdownContainer = dropdown.querySelector(
+        ".dropdown-container, .language-dropdown-container"
+      );
+      if (!dropdown.contains(e.target)) {
+        dropdownContainer.style.display = "none";
+      }
+    });
   });
-
-document.addEventListener("click", function () {
-  var dropdownMenu = document.getElementById("language-dropdown-menu");
-
-  if (dropdownMenu.classList.contains("active")) {
-    dropdownMenu.classList.remove("active");
-  }
 });

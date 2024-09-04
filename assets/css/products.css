@@ -331,6 +331,7 @@ header .dropdown-container .inner-container .section a {
   font-size: 38px;
   width: 90%;
   margin: auto;
+  font-family: "nexa-light";
 }
 #spotlight .container .contents h3 {
   color: #fff;
@@ -338,6 +339,7 @@ header .dropdown-container .inner-container .section a {
   text-align: justify;
   width: 90%;
   margin: auto;
+  font-family: "nexa-light";
 }
 #spotlight .container .contents button {
   background-color: #f37124;
@@ -371,12 +373,14 @@ header .dropdown-container .inner-container .section a {
 #product .top h4 {
   color: #12355b;
   font-size: 44px;
+  font-family: "nexa-light";
 }
 
 #product .top p {
   color: #000;
   font-size: 20px;
   margin-top: 5px;
+  font-family: "nexa-light";
 }
 
 /* Container and Card */
@@ -507,6 +511,7 @@ header .dropdown-container .inner-container .section a {
   text-align: center;
   width: 30%;
   margin: auto;
+  font-family: "nexa-bold";
 }
 #offers .container .contents button {
   color: #fff;

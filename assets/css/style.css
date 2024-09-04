@@ -227,6 +227,13 @@ header .menu-box {
   text-align: center;
   padding: 5px 0;
 }
+.mobile-header .dropdown-container a {
+  margin-top: 0;
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  color: #000;
+}
 .mobile-header .lists .buttons {
   display: grid;
   place-items: center;
@@ -258,13 +265,37 @@ header .dropdown-here {
   position: relative;
 }
 header .dropdown-container {
-  bottom: -200px;
+  bottom: -190px;
+  left: -145px;
   position: absolute;
   background-color: #fff;
   padding: 20px;
   min-width: max-content;
   border: 1px solid black;
   display: none;
+}
+header .mobile-header .dropdown-here {
+  width: 11%;
+  margin: auto;
+}
+header .mobile-header .dropdown-container {
+  top: 55px;
+  left: -130px;
+  position: absolute;
+  background-color: #fff;
+  padding: 20px;
+  min-width: max-content;
+  display: none;
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in;
+  border: none;
+}
+header .mobile-header .dropdown-container.show {
+  max-height: 300px;
+  padding: 20px;
+  border: 1px solid black;
 }
 header .language {
   position: relative;
@@ -997,7 +1028,6 @@ footer .container .right .section form input::placeholder {
   }
   #get-in-touch .container .left .map-container {
     height: 300px;
-
   }
 }
 @media screen and (max-width: 480px) {

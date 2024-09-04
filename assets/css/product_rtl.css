@@ -67,6 +67,16 @@ header .right .lists .enquiry {
 .rtl #spotlight .container .contents h3 {
   font-family: "avenir-book";
 }
+.rtl #product .top h4 {
+  font-family: "avenir-heavy";
+}
+.rtl #product .top p {
+  color: #000;
+  font-size: 20px;
+  margin-top: 5px;
+  font-family: "avenir-book";
+}
+
 .rtl #why-choose .container .box-container .box h3 {
   text-align: right;
 }
@@ -82,6 +92,13 @@ header .right .lists .enquiry {
 }
 .rtl #product .container .card .bottom .left p {
   text-align: right;
+  font-family: "avenir-book";
+}
+.rtl #offers .container .contents h3 {
+  font-family: "avenir-heavy";
+}
+.rtl #offers .container .contents button {
+  font-family: "avenir-book";
 }
 /* .rtl #offers .container .contents h3 {
   width: 45%;
